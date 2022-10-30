@@ -356,11 +356,11 @@ img {
 
 /* Наша команда */
 
-.team {
+.employee {
   background-color: var(--background-secondary-color);
 }
 
-.team-head {
+.employee__head {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -371,14 +371,14 @@ img {
   color: var(--headlines);
 }
 
-.employee-list {
+.employee__list {
   display: flex;
   justify-content: space-between;
 
   list-style-type: none;
 }
 
-.employee-card {
+.employee__item {
   width: 270px;
   min-height: 368px;
   border-radius: 0px 0px 4px 4px;
@@ -389,12 +389,12 @@ img {
   text-align: center;
 }
 
-.employee-card-content {
+.employee-card__content {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.employee-name {
+.employee-card__name {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -404,7 +404,7 @@ img {
   color: var(--headlines);
 }
 
-.position {
+.employee-card__position {
   margin-bottom: 16px;
 
   font-size: 16px;
@@ -425,7 +425,7 @@ img {
   list-style: none;
 }
 
-.social-networks .link {
+.social-networks__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -440,12 +440,12 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-networks .icon {
+.social-networks__icon {
   fill: currentColor;
 }
 
-.social-networks .link:hover,
-.social-networks .link:focus {
+.social-networks__link:hover,
+.social-networks__link:focus {
   background-color: var(--accent-color);
   color: var(--header-background-color);
 }
