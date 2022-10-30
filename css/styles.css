@@ -202,6 +202,7 @@ img {
   align-items: center;
 }
 
+/* Унікальна інформація */
 /* Герой */
 
 .hero {
@@ -226,7 +227,7 @@ img {
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -241,7 +242,7 @@ img {
   color: var(--header-background-color);
 }
 
-.primary-button {
+.hero__btn {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 216px;
@@ -265,19 +266,19 @@ img {
   padding-bottom: 0px;
 }
 
-.benefit-head {
+.benefits__head {
   color: transparent;
   height: 0;
 }
 
-.benefits-list {
+.benefits__list {
   display: flex;
   justify-content: space-between;
 
   list-style-type: none;
 }
 
-.benefits-list .icon-div {
+.benefits__icon-div {
   display: flex;
   width: 270px;
   height: 120px;
@@ -289,7 +290,7 @@ img {
   background-color: var(--background-secondary-color);
 }
 
-.benefit-title {
+.benefits__title {
   width: 270px;
   margin-bottom: 10px;
   margin-top: 0;
@@ -301,7 +302,7 @@ img {
   color: var(--headlines);
 }
 
-.benefit-description {
+.benefits__description {
   width: 270px;
   font-size: 14px;
   line-height: 1.71;
@@ -310,7 +311,7 @@ img {
 
 /* Чим ми займаємося */
 
-.tasks-head {
+.tasks__head {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -321,14 +322,14 @@ img {
   color: var(--headlines);
 }
 
-.tasks-list {
+.tasks__list {
   display: flex;
   justify-content: space-between;
 
   list-style-type: none;
 }
 
-.tasks-item {
+.tasks__item {
   position: relative;
 
   font-family: "Roboto", sans-serif;
@@ -342,9 +343,9 @@ img {
   color: var(--header-background-color);
 }
 
-.tasks-list .overlay {
+.tasks__overlay {
   position: absolute;
-  left: 0;
+  /* left: 0; */
   bottom: 0;
   width: 100%;
 
