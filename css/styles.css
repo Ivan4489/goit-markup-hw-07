@@ -452,7 +452,7 @@ img {
 
 /* Постійні клієнти */
 
-.clients-head {
+.clients__head {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -463,7 +463,7 @@ img {
   color: var(--headlines);
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: space-between;
 
