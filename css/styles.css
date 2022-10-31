@@ -856,12 +856,17 @@ img {
   border-radius: 2px;
 }
 
-.policy-options__checkbox:checked + .icon {
+.policy-options__checkbox:checked + .policy-options__icon {
   background-color: var(--accent-color);
   background-image: url(../images/vector-compressed/checked.svg);
   background-position: center;
   border-color: transparent;
   background-repeat: no-repeat;
+}
+
+.policy-options__label {
+  display: flex;
+  align-items: center;
 }
 
 .policy-options__label,
@@ -880,7 +885,7 @@ img {
   color: var(--accent-color);
 }
 
-.form-btn {
+.form__btn {
   display: flex;
   margin-right: auto;
   margin-left: auto;
