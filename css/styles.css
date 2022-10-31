@@ -188,7 +188,7 @@ img {
 }
 
 .contacts__link:hover,
-.contacts__link:focus{
+.contacts__link:focus {
   color: var(--accent-color);
 }
 
@@ -509,7 +509,7 @@ img {
   align-items: baseline;
 }
 
-.footer .address {
+.footer__address {
   margin-right: 70px;
 }
 
@@ -538,10 +538,14 @@ img {
 }
 
 .contacts--footer {
+  display: block;
   list-style-type: none;
 }
 
 .contacts__link--footer {
+  padding-top: 0;
+  padding-bottom: 0;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -555,17 +559,16 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__item:not(:last-child) {
+.contacts__item--footer:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--accent-color);
+.contacts__item--footer:last-child {
+  margin-left: 0;
 }
 
-.social-head,
-.subscription-head {
+.channels__head,
+.subscription__head {
   margin-bottom: 20px;
 
   font-family: "Roboto", sans-serif;
@@ -578,13 +581,13 @@ img {
   color: var(--header-background-color);
 }
 
-.footer .link {
+.social-networks__link--footer {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--header-background-color);
 }
 
-.social-list .link:hover,
-.social-list .link:focus {
+.social-networks__link--footer:hover,
+.social-networks__link--footer:focus {
   background-color: var(--accent-color);
   color: var(--header-background-color);
 }
@@ -593,7 +596,12 @@ img {
   margin-left: auto;
 }
 
-.input-mail {
+.subscription__form {
+  display: flex;
+  flex-direction: row;
+}
+
+.subscription__input-mail {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -610,17 +618,12 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-mail:hover,
-.input-mail:focus {
+.subscription__input-mail:hover,
+.subscription__input-mail:focus {
   border-color: var(--accent-color);
 }
 
-.subscription-form {
-  display: flex;
-  flex-direction: row;
-}
-
-.subscription-button {
+.subscription__btn {
   display: flex;
   align-items: center;
 
@@ -641,7 +644,7 @@ img {
   cursor: pointer;
 }
 
-.subscription .icon {
+.subscription__icon {
   fill: currentColor;
   margin-left: 10px;
 }
