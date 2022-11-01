@@ -907,12 +907,12 @@ img {
 
 /* Портфоліо */
 
-.portfolio > .container {
+.portfolio__container {
   display: flex;
   flex-direction: column;
 }
-
-.filter-list {
+/* Фільтри */
+.filters {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -920,11 +920,11 @@ img {
   list-style-type: none;
 }
 
-.filter-list .item + .item {
+.filters__item + .filters__item {
   margin-left: 8px;
 }
 
-.secondary-button {
+.filters__btn {
   padding: 6px 22px;
   border-radius: 4px;
 
@@ -944,22 +944,22 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.secondary-button:hover,
-.secondary-button:focus {
+.filters__btn:hover,
+.filters__btn:focus {
   background-color: var(--accent-color);
   color: var(--header-background-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* Portfolio-list */
+/* Перелік проектів */
 
-.portfolio-head {
+.portfolio__head {
   color: transparent;
   height: 0;
 }
 
-.portfolio-list {
+.projects {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -972,7 +972,7 @@ img {
   list-style-type: none;
 }
 
-.portfolio-item {
+.projects__item {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
@@ -985,21 +985,21 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover {
+.projects__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-card-thumb {
+.projects__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.project-card-content {
+.projects__content {
   padding: 20px 24px;
 }
 
-.project-name {
+.projects__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -1007,7 +1007,7 @@ img {
   color: var(--headlines);
 }
 
-.project-description {
+.projects__description {
   margin-top: 4px;
 
   font-size: 16px;
@@ -1016,7 +1016,7 @@ img {
   color: var(--primary-text-color);
 }
 
-.project-card-thumb .overlay {
+.projects__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1038,7 +1038,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover .project-card-thumb .overlay {
+.projects__item:hover .projects__overlay {
   transform: translateY(0);
 }
 
