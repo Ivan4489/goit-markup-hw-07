@@ -78,7 +78,7 @@ img {
   border-bottom: 1px solid var(--header-border);
 }
 
-.header .logo {
+.logo {
   padding-top: 24px;
   padding-bottom: 25px;
 
@@ -91,7 +91,7 @@ img {
   text-decoration: none;
 }
 
-.accent {
+.logo__web {
   color: var(--accent-color);
 }
 
@@ -513,7 +513,7 @@ img {
   margin-right: 70px;
 }
 
-.footer__logo {
+.logo--white {
   display: inline-block;
   margin-bottom: 20px;
 
