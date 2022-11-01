@@ -615,6 +615,10 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.subscription__input-mail::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .subscription__input-mail:hover,
 .subscription__input-mail:focus {
   border-color: var(--accent-color);
