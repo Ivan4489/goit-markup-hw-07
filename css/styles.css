@@ -22,7 +22,6 @@
 }
 
 .page {
-  /* background-color: var(--background-primary-color); */
   background-color: var(--header-background-color);
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
@@ -68,6 +67,10 @@ img {
 .header__container,
 .footer__container {
   display: flex;
+}
+
+.footer__container {
+  align-items: baseline;
 }
 
 /* Шапка сайту */
@@ -516,10 +519,6 @@ img {
   padding-bottom: 60px;
 
   background-color: var(--footer-background-color);
-}
-
-.footer .container {
-  align-items: baseline;
 }
 
 .footer__address {
@@ -1046,12 +1045,3 @@ img {
   transform: translateY(0);
 }
 
-/* background-primary-color: #F5F5F5 */
-/* background-secondary-color: #F5F4FA */
-/* primary-text-color: #757575 */
-/* headlines: #212121 */
-/* accent-color: #2196F3 */
-/* footer-background-color: #2F303A */
-/* header-background-color: #FFFFFF */
-/* logo-black-color:#000000 */
-/* portfolio-border:#EEEEEE */
