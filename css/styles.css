@@ -60,15 +60,14 @@ img {
   margin-left: auto;
 }
 
-.header > .container,
-.team > .container .footer > .container {
+/* .header__container,
+.employee__container, .footer__container {
   margin-bottom: 0px;
-}
+} */
 
-.header > .container,
-.footer > .container {
+.header__container,
+.footer__container {
   display: flex;
-  /* align-items: center; */
 }
 
 /* Шапка сайту */
@@ -88,17 +87,21 @@ img {
 }
 
 .logo--black {
-  padding-top: 24px;
-  padding-bottom: 25px;
-
   color: var(--logo-black-color);
 }
 
+.header__logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .logo--white {
+  color: var(--header-background-color);
+}
+
+.footer__logo {
   display: inline-block;
   margin-bottom: 20px;
-
-  color: var(--header-background-color);
 }
 
 .logo__web {
