@@ -1,6 +1,6 @@
 .page {
-  background-color: var(--header-background-color);
-  color: var(--primary-text-color);
+  background-color: $white-clr;
+  color: $primary-text-clr;
   font-family: "Roboto", sans-serif;
 }
 
@@ -47,4 +47,9 @@ img {
 
 .footer__container {
   align-items: baseline;
+}
+
+.contacts__container {
+  display: flex;
+  align-items: center;
 }
