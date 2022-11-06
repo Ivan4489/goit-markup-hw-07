@@ -159,11 +159,6 @@
   margin-bottom: 30px;
 }
 
-.policy-options__item {
-  display: flex;
-  align-items: center;
-}
-
 .policy-options,
 .customer-data {
   list-style: none;
@@ -174,7 +169,7 @@
 }
 
 .policy-options__icon {
-  display: inline-block;
+  position: relative;
   width: 16px;
   height: 15px;
   margin-right: 8px;
@@ -182,14 +177,22 @@
 
   border: 2px solid $headline-clr;
   border-radius: 2px;
+  fill: transparent;
+}
+
+.icon-checked {
+  position: absolute;
+  left: -2px;
+  top: -2px;
 }
 
 .policy-options__checkbox:checked + .policy-options__icon {
   background-color: $accent-clr;
-  background-image: url(../images/vector-compressed/checked.svg);
   background-position: center;
   border-color: transparent;
   background-repeat: no-repeat;
+
+  fill: $white-clr;
 }
 
 .policy-options__label {
@@ -211,4 +214,5 @@
 
 .policy-options__link {
   color: $accent-clr;
+  margin-left: 6px;
 }

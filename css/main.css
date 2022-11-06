@@ -843,15 +843,6 @@ img {
   margin-bottom: 30px;
 }
 
-.policy-options__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .policy-options,
 .customer-data {
   list-style: none;
@@ -864,21 +855,28 @@ img {
 }
 
 .policy-options__icon {
-  display: inline-block;
+  position: relative;
   width: 16px;
   height: 15px;
   margin-right: 8px;
   margin-left: 13px;
   border: 2px solid #212121;
   border-radius: 2px;
+  fill: transparent;
+}
+
+.icon-checked {
+  position: absolute;
+  left: -2px;
+  top: -2px;
 }
 
 .policy-options__checkbox:checked + .policy-options__icon {
   background-color: #2196f3;
-  background-image: url(../images/vector-compressed/checked.svg);
   background-position: center;
   border-color: transparent;
   background-repeat: no-repeat;
+  fill: #ffffff;
 }
 
 .policy-options__label {
@@ -904,6 +902,7 @@ img {
 
 .policy-options__link {
   color: #2196f3;
+  margin-left: 6px;
 }
 
 /* Фільтри */
